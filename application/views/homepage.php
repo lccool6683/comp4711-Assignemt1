@@ -9,22 +9,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Demo - Simple parallax scrolling tutorial</title>
+        <title>COMP4711 Assignment1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
-        <link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <!--
-                * This demo was prepared for you by Petr Tichy - Ihatetomatoes.net
-                * Want to see more similar demos and tutorials?
-                * Help by spreading the word about Ihatetomatoes blog.
-                * Facebook - https://www.facebook.com/ihatetomatoesblog
-                * Twitter - https://twitter.com/ihatetomatoes
-                * Google+ - https://plus.google.com/u/0/109859280204979591787/about
-        -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
