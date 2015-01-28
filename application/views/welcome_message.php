@@ -1,90 +1,138 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Demo - Simple parallax scrolling tutorial</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-	<style type="text/css">
+        <link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
-	::-webkit-selection { background-color: #E13300; color: white; }
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+        <!--
+                * This demo was prepared for you by Petr Tichy - Ihatetomatoes.net
+                * Want to see more similar demos and tutorials?
+                * Help by spreading the word about Ihatetomatoes blog.
+                * Facebook - https://www.facebook.com/ihatetomatoesblog
+                * Twitter - https://twitter.com/ihatetomatoes
+                * Google+ - https://plus.google.com/u/0/109859280204979591787/about
+        -->
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <style type="text/css">
+            body {
+                font-family: 'Open Sans', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="loading">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
+       	<div id="preload">
+            <img src="img/bcg_slide-1.jpg">
+            <img src="img/bcg_slide-2.jpg">
+            <img src="img/bcg_slide-3.jpg">
+            <img src="img/bcg_slide-4.jpg">
+       	</div>
 
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
+       	<main>
 
-	#body {
-		margin: 0 15px 0 15px;
-	}
+            <section id="slide-1" class="homeSlide">
+                <div class="bcg" 
+                     data-center="background-position: 50% 0px;" 
+                     data-top-bottom="background-position: 50% -100px;" 
+                     data-anchor-target="#slide-1"
+                     >
+                    <div class="hsContainer">
+                        <div class="hsContent" data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target="#slide-1 h2">
+                            <h2>Simple parallax scrolling is...</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
+            <section id="slide-2" class="homeSlide">
+                <div class="bcg" 
+                     data-center="background-position: 50% 10px;" 
+                     data-top-bottom="background-position: 50% -100px;" 
+                     data-bottom-top="background-position: 50% 100px;" 
+                     data-anchor-target="#slide-2"
+                     >
+                    <div class="hsContainer">
+                        <div class="hsContent" 
+                             data-center="opacity: 1" 
+                             data-center-top="opacity: 0" 
+                             data--100-bottom="opacity: 0;" 
+                             data-anchor-target="#slide-2"
+                             >
+                            <h2>great for story telling websites.</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
-</head>
-<body>
+            <section id="slide-3" class="homeSlide">
+                <div class="bcg" 
+                     data-center="background-position: 50% 0px;" 
+                     data-top-bottom="background-position: 50% -100px;" 
+                     data-bottom-top="background-position: 50% 100px;" 
+                     data-anchor-target="#slide-3"
+                     >
+                    <div class="hsContainer">
+                        <div class="hsContent" 
+                             data--50-bottom="opacity: 0;" 
+                             data--200-bottom="opacity: 1;" 
+                             data-center="opacity: 1" 
+                             data-200-top="opacity: 0" 
+                             data-anchor-target="#slide-3 h2"
+                             >
+                            <h2>Now go and create your own story</h2>
+                        </div>
+                    </div>
 
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+                </div>
+            </section>
 
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+            <section id="slide-4" class="homeSlide">
+                <div class="bcg" 
+                     data-center="background-position: 50% 0px;" 
+                     data-top-bottom="background-position: 50% -100px;" 
+                     data-bottom-top="background-position: 50% 100px;" 
+                     data-anchor-target="#slide-4"
+                     >
+                    <div class="hsContainer">
+                        <div class="hsContent" 
+                             data-bottom-top="opacity: 0" 
+                             data-25p-top="opacity: 0" 
+                             data-top="opacity: 1"  
+                             data-anchor-target="#slide-4"
+                             >
+                            <h2>and share mine.</h2>
+                        </div>
+                    </div>
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+                </div>
+            </section>
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+        </main>
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/_main.js"></script>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
-
-</body>
+    </body>
 </html>
