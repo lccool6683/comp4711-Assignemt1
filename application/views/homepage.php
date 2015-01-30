@@ -30,11 +30,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h1>Vancouver Explorer</h1>
             <span class="mynav">
                 <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="sleep.html">Sleep</a></li>
-                    <li><a href="play.html">Play</a></li>
-                    <li><a href="restaurant.html">Eat</a></li>                    
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="sleep">Sleep</a></li>
+                    <li><a href="play">Play</a></li>
+                    <li><a href="restaurant">Eat</a></li>                    
+                    <li><a href="index">Home</a></li>
                 </ul>
             </span>
         </header>
