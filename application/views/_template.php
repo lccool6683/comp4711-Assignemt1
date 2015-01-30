@@ -30,11 +30,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h1>{pageTitle}</h1>
             <span class="mynav">
                 <ul>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/stay">Stay</a></li>
-                    <li><a href="/go">Go</a></li>
-                    <li><a href="/dine">Dine</a></li>                    
-                    <li><a href="/index">Home</a></li>
+                    <li><a href="{aboutLink}">About</a></li>
+                    <li><a href="{stayLink}">Stay</a></li>
+                    <li><a href="{goLink}">Go</a></li>
+                    <li><a href="{dineLink}">Dine</a></li>                    
+                    <li><a href="{bkHome}">Home</a></li>
                 </ul>
             </span>
         </header>
