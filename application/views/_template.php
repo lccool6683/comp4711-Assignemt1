@@ -27,16 +27,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <h1>{pagetitle}</h1>
+            <h1>{pageTitle}</h1>
             <span class="mynav">
                 <ul>
-                    <li><a href="about">About</a></li>
-                    <li><a href="sleep">Sleep</a></li>
-                    <li><a href="play">Play</a></li>
-                    <li><a href="restaurant">Eat</a></li>                    
-                    <li><a href="index">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/stay">Stay</a></li>
+                    <li><a href="/go">Go</a></li>
+                    <li><a href="/dine">Dine</a></li>                    
+                    <li><a href="/index">Home</a></li>
                 </ul>
             </span>
+            {content}
         </header>
 
        	<div id="preload">

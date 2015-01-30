@@ -12,15 +12,12 @@ class Welcome extends Application {
     //-------------------------------------------------------------
 
     function index() {
-        $this->load->view('_template');
-        // build the list of authors, to pass on to our view
-        //$source = $this->quotes->all();
-        //$authors = array();
-        //foreach ($source as $record) {
-        //    $authors[] = array('who' => $record['who'], 'mug' => $record['mug'], 'href' => $record['where']);
-        //}
-        //$this->data['authors'] = $authors;
-
         
+        /* Set the page title, heading, and content here */
+		$this->data["title"] = "Vancouver Explorer";
+		$this->data["pageTitle"] = "Vancouver Explorer -- COMP4711 Assignemt1";
+		/* calls Render in the Main_Controller 
+		see MY_Controller.php in ./core */
+		$this->render(); 
     }
 }
