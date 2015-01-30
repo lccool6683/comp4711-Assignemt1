@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>        
         <style type="text/css">
             body {
                 font-family: 'Open Sans', sans-serif;
@@ -31,10 +31,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <span class="mynav">
                 <ul>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="sleep.html">Sleep</a></li>
-                    <li><a href="play.html">Play</a></li>
-                    <li><a href="restaurant.html">Eat</a></li>                    
-                    <li><a href="index.html">Home</a></li>
+                    <li data-slide="4"><a href="#slide-4">Sleep</a></li>
+                    <li data-slide="3"><a href="#slide-3">Play</a></li>
+                    <li data-slide="2"><a href="#slide-2">Eat</a></li>                    
+                    <li data-slide="1"><a href="#slide-1">Home</a></li>
                 </ul>
             </span>
         </header>
@@ -48,7 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
        	<main>
 
-            <section id="slide-1" class="homeSlide">
+            <section id="slide-1" class="homeSlide" data-slide="1" data-stellar-background-ratio="0.5">
                 <div class="bcg" 
                      data-center="background-position: 50% 0px;" 
                      data-top-bottom="background-position: 50% -100px;" 
@@ -62,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </section>
 
-            <section id="slide-2" class="homeSlide">
+            <section id="slide-2" class="homeSlide" data-slide="2" data-stellar-background-ratio="0.5">
                 <div class="bcg" 
                      data-center="background-position: 50% 10px;" 
                      data-top-bottom="background-position: 50% -100px;" 
@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </section>
 
-            <section id="slide-3" class="homeSlide">
+            <section id="slide-3" class="homeSlide" data-slide="3" data-stellar-background-ratio="0.5">
                 <div class="bcg" 
                      data-center="background-position: 50% 0px;" 
                      data-top-bottom="background-position: 50% -100px;" 
@@ -100,11 +100,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h2>Now go and create your own story</h2>
                         </div>
                     </div>
-
                 </div>
+                <a class="homeBtn" href="#slide-1"></a>
             </section>
 
-            <section id="slide-4" class="homeSlide">
+            <section id="slide-4" class="homeSlide" data-slide="4" data-stellar-background-ratio="0">
                 <div class="bcg" 
                      data-center="background-position: 50% 0px;" 
                      data-top-bottom="background-position: 50% -100px;" 
@@ -120,9 +120,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                              >
                             <h2>and share mine.</h2>
                         </div>
-                    </div>
-
+                    </div>                    
                 </div>
+                <a class="homeBtn" href="#slide-1"></a>
             </section>
 
         </main>
@@ -132,6 +132,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="js/imagesloaded.js"></script>
         <script src="js/skrollr.js"></script>
         <script src="js/_main.js"></script>
+        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 
     </body>
 </html>
