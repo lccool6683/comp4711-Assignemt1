@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>COMP4711 Assignment1</title>
+        <title>{title}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <h1>Vancouver Explorer</h1>
+            <h1>{pagetitle}</h1>
             <span class="mynav">
                 <ul>
                     <li><a href="about">About</a></li>
@@ -35,11 +35,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li><a href="play">Play</a></li>
                     <li><a href="restaurant">Eat</a></li>                    
                     <li><a href="index">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li data-slide="4"><a href="#slide-4">Sleep</a></li>
-                    <li data-slide="3"><a href="#slide-3">Play</a></li>
-                    <li data-slide="2"><a href="#slide-2">Eat</a></li>                    
-                    <li data-slide="1"><a href="#slide-1">Home</a></li>
                 </ul>
             </span>
         </header>
