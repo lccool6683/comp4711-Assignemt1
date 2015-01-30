@@ -7,9 +7,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{title}</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
@@ -37,7 +37,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li><a href="/index">Home</a></li>
                 </ul>
             </span>
-            {content}
         </header>
 
        	<div id="preload">
@@ -60,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h2>Simple parallax scrolling is...</h2>
                         </div>
                     </div>
-                </div>
+                </div>                                
             </section>
 
             <section id="slide-2" class="homeSlide" data-slide="2" data-stellar-background-ratio="0.5">
@@ -102,7 +101,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <a class="homeBtn" href="#slide-1"></a>
             </section>
 
             <section id="slide-4" class="homeSlide" data-slide="4" data-stellar-background-ratio="0">

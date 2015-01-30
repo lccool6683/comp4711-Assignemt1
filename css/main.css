@@ -21,10 +21,25 @@ header {
     position: fixed;
 }
 mynav {float:right}
-.mynav ul {list-style-type:none; padding-right: 20px;font-size: 120%;}
-.mynav ul li {float:right; margin-right:15px;color:white;list-style-type:none;}
+.mynav ul {list-style-type:none; padding-right: 20px; font-size: 160%;}
+.mynav ul li {float:right; margin-right:15px; color:white;list-style-type:none;}
 .mynav a {text-decoration:none;color:black; font-weight:bold;}
 
+.homeBtn {
+    display: block;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	left: 50%;
+	background-color: #333333;
+	background-image:url(../img/arrow.png);
+}
+.homeBtn:hover{
+	background-color:#494949;
+	cursor:pointer;
+
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.

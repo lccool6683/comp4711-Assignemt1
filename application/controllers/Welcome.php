@@ -14,10 +14,10 @@ class Welcome extends Application {
     function index() {
         
         /* Set the page title, heading, and content here */
-		$this->data["title"] = "Vancouver Explorer";
-		$this->data["pageTitle"] = "Vancouver Explorer -- COMP4711 Assignemt1";
+        $this->data["title"] = "Vancouver Explorer -- COMP4711 Assignemt1";
+        $this->data["pageTitle"] = "Vancouver Explorer";
 		/* calls Render in the Main_Controller 
 		see MY_Controller.php in ./core */
-		$this->render(); 
+        $this->render(); 
     }
 }
