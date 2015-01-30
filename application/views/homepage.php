@@ -26,6 +26,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+        <header>
+            <h1>Vancouver Explorer</h1>
+            <span class="mynav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sleep.html">Sleep</a></li>
+                    <li><a href="play.html">Play</a></li>
+                    <li><a href="restaurant.html">Eat</a></li>                    
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </span>
+        </header>
 
        	<div id="preload">
             <img src="img/bcg_slide-1.jpg">
