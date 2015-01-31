@@ -23,7 +23,9 @@ class Application extends CI_Controller {
 		/* Set up page */
         
         //$this->data['content'] = $this->parser->parse($this->data['content'], $this->data, true);
-	$this->parser->parse("_template", $this->data);
+	$this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
+        $this->data['data'] = &$this->data;
+        $this->parser->parse("_template_info", $this->data);
     }
 
 }

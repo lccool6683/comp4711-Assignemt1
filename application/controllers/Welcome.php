@@ -16,17 +16,28 @@ class Welcome extends Application {
         /* Set the page title, heading, and content here */
         $this->data["title"] = "Vancouver Explorer -- COMP4711 Assignemt1";
         $this->data["pageTitle"] = "Vancouver Explorer";
-        $this->data['bkHome'] = "#slide-1";
-        $this->data["dineLink"] = "#slide-2";
-        $this->data["goLink"] = "#slide-3";
-        $this->data["stayLink"] = "#slide-4";
-        $this->data["aboutLink"] = "/about";
+        $homes = $this->homedata->getAll();
+                $content = "";
+                
+                // Parse each dine post into html
+                foreach($homes as $home)
+                {
+                    $content .= $this->creatHomes($home);
+                }
+                
+                // Place the blog posts html into the page
+                $this->data['homeposts'] = $content;
+                
+                $this->data['pagebody'] = 'homepage';
+                $this->render();
 		/* calls Render in the Main_Controller 
 		see MY_Controller.php in ./core */
-        $this->render(); 
     }
     
-    function home() {
-        $this->load->view('homepage');
-    }
+    public function creatHomes($home)
+        {
+            $content = $this->parser->parse('_homepage', (array) $home, true);
+            
+            return $content;
+        }
 }

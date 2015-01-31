@@ -2,10 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <title>{title}</title>
         <meta charset="utf-8">
@@ -51,11 +47,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <section id="slide-1" class="homeSlide" data-slide="1" data-stellar-background-ratio="0.5">
                 <div class="bcg" 
                      data-center="background-position: 50% 0px;" 
-                     data-top-bottom="background-position: 50% -100px;" 
+                     data-top-bottom="background-position: 50% -100px;"
+                     data-bottom-top="background-position: 50% 100px;"
                      data-anchor-target="#slide-1"
                      >
                     <div class="hsContainer">
-                        <div class="hsContent" data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target="#slide-1 h2">
+                        <div class="hsContent" 
+                             data-center="bottom: 200px; opacity: 1" 
+                             data-top="bottom: 1200px; opacity: 0" 
+                             data-anchor-target="#slide-1 h2">
                             <h2>Simple parallax scrolling is...</h2>
                         </div>
                     </div>
@@ -71,9 +71,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      >
                     <div class="hsContainer">
                         <div class="hsContent" 
-                             data-center="opacity: 1" 
-                             data-center-top="opacity: 0" 
-                             data--100-bottom="opacity: 0;" 
+                             data-center="bottom: 200px; opacity: 1" 
+                             data-top="bottom: 1200px; opacity: 0" 
                              data-anchor-target="#slide-2"
                              >
                             <h2>great for story telling websites.</h2>
@@ -91,10 +90,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      >
                     <div class="hsContainer">
                         <div class="hsContent" 
-                             data--50-bottom="opacity: 0;" 
-                             data--200-bottom="opacity: 1;" 
-                             data-center="opacity: 1" 
-                             data-200-top="opacity: 0" 
+                             data-center="bottom: 200px; opacity: 1" 
+                             data-top="bottom: 1200px; opacity: 0" 
                              data-anchor-target="#slide-3 h2"
                              >
                             <h2>Now go and create your own story</h2>
@@ -112,9 +109,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      >
                     <div class="hsContainer">
                         <div class="hsContent" 
-                             data-bottom-top="opacity: 0" 
-                             data-25p-top="opacity: 0" 
-                             data-top="opacity: 1"  
+                             data-center="bottom: 200px; opacity: 1" 
+                             data-top="bottom: 1200px; opacity: 0" 
                              data-anchor-target="#slide-4"
                              >
                             <h2>and share mine.</h2>
