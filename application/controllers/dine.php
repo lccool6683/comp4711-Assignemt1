@@ -35,7 +35,7 @@ class dine extends Application{
         // Parse the contents of a single post into the post template
         public function creatDines($dine)
         {
-            $content = $this->parser->parse('_dine', (array) $dine, true);
+            $content = $this->parser->parse('_sectionTemp', (array) $dine, true);
             
             return $content;
         }

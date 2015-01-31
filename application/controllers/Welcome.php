@@ -36,7 +36,7 @@ class Welcome extends Application {
     
     public function creatHomes($home)
         {
-            $content = $this->parser->parse('_homepage', (array) $home, true);
+            $content = $this->parser->parse('_sectionTemp', (array) $home, true);
             
             return $content;
         }

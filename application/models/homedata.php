@@ -15,16 +15,16 @@ class homedata extends CI_Model{
     
     // Dummy data for dine
     var $data = array(
-        array('id' => '1', 'content' => 'one',
+        array('id' => '1', 'content' => 'By Sea, Land & Air, We Prosper',
             'img' => '../img/bcg_slide-1.jpg'),
         
-        array('id' => '2', 'content' => 'two',
+        array('id' => '2', 'content' => 'Vancouver has plenty: Vancity, The Terminal City, Hollywood North, Raincity, Vansterdam and the Left Coast',
             'img' => 'img/bcg_slide-2.jpg'),
         
-        array('id' => '3', 'content' => 'three',
+        array('id' => '3', 'content' => 'Go anywhere. Learn anything. Read every day',
             'img' => 'img/bcg_slide-3.jpg'),
         
-        array('id' => '4', 'content' => 'four',
+        array('id' => '4', 'content' => 'Vancouver: Pedalling into a carless future',
             'img' => 'img/bcg_slide-4.jpg')
     );
     
