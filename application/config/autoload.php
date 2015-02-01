@@ -137,4 +137,4 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array('dinedata', 'homedata', 'godata', 'staydata');
+$autoload['model'] = array('dinedata', 'homedata', 'godata', 'staydata', 'aboutdata');

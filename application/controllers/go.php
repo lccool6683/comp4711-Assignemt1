@@ -14,19 +14,17 @@
 class go extends Application{
     public function index()
 	{
-        $this->data["title"] = "Vancouver Explorer -- COMP4711 Assignemt1";
-        $this->data["pageTitle"] = "Vancouver Explorer";
                 $gos = $this->godata->getAllGo();
                 $content = "";
                 
-                // Parse each dine post into html
+                // Parse each go section into html
                 foreach($gos as $go)
                 {
                     $content .= $this->creatGos($go);
                 }
                 
-                // Place the blog posts html into the page
-                $this->data['goposts'] = $content;
+                // Place the go html into the page
+                $this->data['gosection'] = $content;
                 
                 $this->data['pagebody'] = 'go';
                 $this->render();

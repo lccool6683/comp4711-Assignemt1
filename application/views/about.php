@@ -1,2 +1,4 @@
-<h1>About</h1>
-<p>Look what we made</p>
+<div id="contents" class="abouts">
+       <h1>about</h1>
+       {aboutsection}
+</div>

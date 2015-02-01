@@ -14,19 +14,17 @@
 class dine extends Application{
     public function index()
 	{
-        $this->data["title"] = "Vancouver Explorer -- COMP4711 Assignemt1";
-        $this->data["pageTitle"] = "Vancouver Explorer";
                 $dines = $this->dinedata->getAllDine();
                 $content = "";
                 
-                // Parse each dine post into html
+                // Parse each dine section into html
                 foreach($dines as $dine)
                 {
                     $content .= $this->creatDines($dine);
                 }
                 
-                // Place the blog posts html into the page
-                $this->data['dineposts'] = $content;
+                // Place the dine html into the page
+                $this->data['dinesection'] = $content;
                 
                 $this->data['pagebody'] = 'dine';
                 $this->render();

@@ -14,19 +14,17 @@
 class stay extends Application{
     public function index()
 	{
-        $this->data["title"] = "Vancouver Explorer -- COMP4711 Assignemt1";
-        $this->data["pageTitle"] = "Vancouver Explorer";
                 $stays = $this->staydata->getAllStay();
                 $content = "";
                 
-                // Parse each dine post into html
+                // Parse each stay section into html
                 foreach($stays as $stay)
                 {
                     $content .= $this->creatStays($stay);
                 }
                 
-                // Place the blog posts html into the page
-                $this->data['stayposts'] = $content;
+                // Place the stay html into the page
+                $this->data['staysection'] = $content;
                 
                 $this->data['pagebody'] = 'stay';
                 $this->render();
