@@ -7,7 +7,7 @@
  */
 
 /**
- * Description of dine
+ * Description of go
  *
  * @author Clemens
  */
@@ -16,25 +16,20 @@ class go extends Application{
 	{
                 $gos = $this->godata->getAllGo();
                 $content = "";
-                
                 // Parse each go section into html
                 foreach($gos as $go)
                 {
                     $content .= $this->creatGos($go);
-                }
-                
+                } 
                 // Place the go html into the page
                 $this->data['gosection'] = $content;
-                
                 $this->data['pagebody'] = 'go';
                 $this->render();
 	}
-
         // Parse the contents of a single post into the post template
         public function creatGos($go)
         {
             $content = $this->parser->parse('_sectionTemp', (array) $go, true);
-            
             return $content;
         }
 }

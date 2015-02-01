@@ -7,13 +7,13 @@
  */
 
 /**
- * Description of dineData
+ * Description of homeData
  *
  * @author Clemens
  */
 class homedata extends CI_Model{
     
-    // Dummy data for dine
+    // Dummy data for home
     var $data = array(
         array('id' => '1', 'content' => 'By Sea, Land & Air, We Prosper',
             'img' => '../img/bcg_slide-1.jpg'),
@@ -33,7 +33,7 @@ class homedata extends CI_Model{
         parent::__construct();
     }
     
-    // Retrieve all dine data
+    // Retrieve all home data
     public function getAll() {
         return $this->data;
     }

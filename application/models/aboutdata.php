@@ -7,13 +7,13 @@
  */
 
 /**
- * Description of dineData
+ * Description of about data
  *
  * @author Clemens
  */
 class aboutdata extends CI_Model{
     
-    // Dummy data for dine
+    // Dummy data for about
     var $data = array(
         array('id' => '1', 'content' => 'This a web application developed for the comp 4711
                     web application development course at British Columbia Institute of
@@ -26,7 +26,7 @@ class aboutdata extends CI_Model{
         parent::__construct();
     }
     
-    // Retrieve all dine data
+    // Retrieve all about data
     public function getAllAbout() {
         return $this->data;
     }

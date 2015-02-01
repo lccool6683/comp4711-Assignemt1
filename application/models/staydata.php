@@ -7,13 +7,13 @@
  */
 
 /**
- * Description of dineData
+ * Description of stayData
  *
  * @author Clemens
  */
 class staydata extends CI_Model{
     
-    // Dummy data for dine
+    // Dummy data for stay
     var $data = array(
         array('id' => '1', 'content' => 'Live like a King',
             'img' => '../img/stay1.jpg'),
@@ -33,7 +33,7 @@ class staydata extends CI_Model{
         parent::__construct();
     }
     
-    // Retrieve all dine data
+    // Retrieve all stay data
     public function getAllStay() {
         return $this->data;
     }

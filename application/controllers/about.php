@@ -7,7 +7,7 @@
  */
 
 /**
- * Description of dine
+ * Description of about
  *
  * @author Clemens
  */
@@ -22,14 +22,11 @@ class about extends Application{
                 {
                     $content .= $this->creatAbout($about);
                 }
-                
                 // Place the about into the page
                 $this->data['aboutsection'] = $content;
-                
                 $this->data['pagebody'] = 'about';
                 $this->render();
 	}
-
         // Parse the contents of a single post into the post template
         public function creatAbout($about)
         {

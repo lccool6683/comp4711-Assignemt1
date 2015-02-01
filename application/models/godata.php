@@ -7,13 +7,13 @@
  */
 
 /**
- * Description of dineData
+ * Description of goData
  *
  * @author Clemens
  */
 class godata extends CI_Model{
     
-    // Dummy data for dine
+    // Dummy data for go
     var $data = array(
         array('id' => '1', 'content' => 'Hop on Canada Line and you are there',
             'img' => '../img/go1.jpg'),
@@ -33,7 +33,7 @@ class godata extends CI_Model{
         parent::__construct();
     }
     
-    // Retrieve all dine data
+    // Retrieve all go data
     public function getAllGo() {
         return $this->data;
     }

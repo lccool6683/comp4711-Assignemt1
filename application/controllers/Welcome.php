@@ -1,6 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ * Description of welcome 
+ *
+ * @author Clemens
+ */
+
 class Welcome extends Application {
 
     function __construct() {
@@ -12,16 +18,13 @@ class Welcome extends Application {
         /* Set content here */
         $homes = $this->homedata->getAll();
                 $content = "";
-                
                 // Parse each welcome section into html
                 foreach($homes as $home)
                 {
                     $content .= $this->creatHomes($home);
                 }
-                
                 // Place the welcome html into the page
                 $this->data['homesection'] = $content;
-                
                 $this->data['pagebody'] = 'homepage';
                 $this->render();
     }

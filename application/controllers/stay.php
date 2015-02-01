@@ -7,7 +7,7 @@
  */
 
 /**
- * Description of dine
+ * Description of stay
  *
  * @author Clemens
  */
@@ -16,16 +16,13 @@ class stay extends Application{
 	{
                 $stays = $this->staydata->getAllStay();
                 $content = "";
-                
                 // Parse each stay section into html
                 foreach($stays as $stay)
                 {
                     $content .= $this->creatStays($stay);
                 }
-                
                 // Place the stay html into the page
                 $this->data['staysection'] = $content;
-                
                 $this->data['pagebody'] = 'stay';
                 $this->render();
 	}
@@ -34,7 +31,6 @@ class stay extends Application{
         public function creatStays($stay)
         {
             $content = $this->parser->parse('_sectionTemp', (array) $stay, true);
-            
             return $content;
         }
 }
