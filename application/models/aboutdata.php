@@ -27,6 +27,7 @@ class aboutdata extends CI_Model{
     }
     
     // Retrieve all about data
+    
     public function getAllAbout() {
         return $this->data;
     }
