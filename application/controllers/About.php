@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class about extends Application{
+class About extends Application{
     public function index()
 	{
                 $abouts = $this->aboutdata->getAllAbout();

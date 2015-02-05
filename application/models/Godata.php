@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class godata extends CI_Model{
+class Godata extends CI_Model{
     
     // Dummy data for go
     var $data = array(

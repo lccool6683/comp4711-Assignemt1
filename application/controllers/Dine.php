@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class dine extends Application{
+class Dine extends Application{
     public function index()
 	{
                 $dines = $this->dinedata->getAllDine();

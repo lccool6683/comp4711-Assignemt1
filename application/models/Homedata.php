@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class homedata extends CI_Model{
+class Homedata extends CI_Model{
     
     // Dummy data for home
     var $data = array(

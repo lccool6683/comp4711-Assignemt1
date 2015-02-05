@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class staydata extends CI_Model{
+class Staydata extends CI_Model{
     
     // Dummy data for stay
     var $data = array(
