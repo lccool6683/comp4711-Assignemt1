@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class go extends Application{
+class Go extends Application{
     public function index()
 	{
                 $gos = $this->godata->getAllGo();

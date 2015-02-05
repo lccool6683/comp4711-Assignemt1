@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class stay extends Application{
+class Stay extends Application{
     public function index()
 	{
                 $stays = $this->staydata->getAllStay();

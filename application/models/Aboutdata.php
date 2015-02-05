@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class aboutdata extends CI_Model{
+class Aboutdata extends CI_Model{
     
     // Dummy data for about
     var $data = array(

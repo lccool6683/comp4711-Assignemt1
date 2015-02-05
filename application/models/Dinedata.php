@@ -11,7 +11,7 @@
  *
  * @author Clemens
  */
-class dinedata extends CI_Model{
+class Dinedata extends CI_Model{
     
     // Dummy data for dine
     var $data = array(
